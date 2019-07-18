@@ -60,7 +60,7 @@ function draw() {
         fill(random(255), random(255), random(255));
         text('im colliding with my enemy',255,480)
         enemyposx = random(20,475)
-        enemeyposy = random(10,450)
+        enemyposy = random(10,450)
     }
     fill(255)
     text('These are your points'+ points, 200, 50)
