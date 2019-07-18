@@ -1,8 +1,8 @@
 let posx = 25;
 let posy = 25;
 let mySpeed = 3;
-let enemyposy
-let enemyposx
+let enemyposy = 0
+let enemyposx = 0
 let enemyWidth = 50
 let enemyHeight = 50
 let points = 0
@@ -21,9 +21,8 @@ function setup(){
 
 function draw() {
     background(0);
-    fill(25);
-    rect(posx,posy,25,25);
-    fill(255)
+    image(clefairy,posx,posy,25,25);
+    rect(posx,posy,50,50);
     rect(enemyposx, enemyposy,25,25)
     //draw the togepi enemy
     image(togepi,enemyposx,enemyposy,enemyWidth,enemyHeight)
@@ -64,5 +63,5 @@ function draw() {
         enemeyposy = random(10,450)
     }
     fill(255)
-    text('These are your points', points, 470, 50)
+    text('These are your points'+ points, 200, 50)
 }
