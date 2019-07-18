@@ -12,6 +12,7 @@ function setup(){
     createCanvas(500,500);
     background(0);
     rectMode(CENTER);
+    imageMode(CENTER);
     enemyposx = random(25,475);
     enemyposy = random(100,470);
     clefairy = loadImage('clefairy.png');
@@ -20,10 +21,10 @@ function setup(){
 
 function draw() {
     background(0);
-    fill(0,100,255);
-    rect(posx,posy,50,50);
-    fill(255,0,0)
-    rect(enemyposx, enemyposy,50,50)
+    fill(25);
+    rect(posx,posy,25,25);
+    fill(255)
+    rect(enemyposx, enemyposy,25,25)
     //draw the togepi enemy
     image(togepi,enemyposx,enemyposy,enemyWidth,enemyHeight)
     if (keyIsDown(LEFT_ARROW)) {
