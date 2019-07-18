@@ -21,9 +21,9 @@ function setup(){
 
 function draw() {
     background(0);
-    image(clefairy,posx,posy,25,25);
     rect(posx,posy,50,50);
-    rect(enemyposx, enemyposy,25,25)
+    image(clefairy,posx,posy,50,50);
+    rect(enemyposx, enemyposy,enemyWidth,enemyHeight)
     //draw the togepi enemy
     image(togepi,enemyposx,enemyposy,enemyWidth,enemyHeight)
     if (keyIsDown(LEFT_ARROW)) {
